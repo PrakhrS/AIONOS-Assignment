@@ -30,7 +30,7 @@ git checkout -b <branch_name>
 *(If git is not fully initialized with commits, or `main` doesn't exist yet, simply create the branch with `git checkout -b <branch_name>` or skip to Step 4 if branch creation fails)*
 
 ## Step 4 — Research the codebase
-Read `AGENTS.md` and any existing files in `.claude/specs/` to understand what is already built and what constraints apply.
+Read `AGENTS.md` and any existing files in `.agents/specs/` to understand what is already built and what constraints apply.
 
 ## Step 5 — Write the spec
 Generate a spec document with this exact structure:
@@ -66,13 +66,13 @@ A specific testable checklist to verify the feature.
 ```
 
 ## Step 6 — Save the spec
-Save the generated spec using `write_to_file` to: `.claude/specs/<step_number>-<feature_slug>.md`
+Save the generated spec using `write_to_file` to: `.agents/specs/<step_number>-<feature_slug>.md`
 
 ## Step 7 — Report to the user
 Print a short summary in this format:
 ```text
 Branch:    <branch_name>
-Spec file: .claude/specs/<step_number>-<feature_slug>.md
+Spec file: .agents/specs/<step_number>-<feature_slug>.md
 Title:     <feature_title>
 ```
 Ask the user to review the spec and provide feedback before starting implementation.
