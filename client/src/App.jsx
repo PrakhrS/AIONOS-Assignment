@@ -16,10 +16,12 @@ function App() {
   const [tickets, setTickets] = useState([]);
   const [selectedTicket, setSelectedTicket] = useState(null);
 
+  const API_BASE = import.meta.env.VITE_API_URL || '';
+
   // Fetch tickets initially and whenever updated
   const fetchTickets = async () => {
     try {
-      const res = await fetch('/api/tickets');
+      const res = await fetch(`${API_BASE}/api/tickets`);
       if (res.ok) {
         const data = await res.json();
         setTickets(data);
@@ -52,7 +54,7 @@ function App() {
 
     try {
       // 3. Call backend API
-      const res = await fetch('/api/chat', {
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -101,7 +103,7 @@ function App() {
 
   const handleSelectTicket = async (id) => {
     try {
-      const res = await fetch(`/api/tickets/${id}`);
+      const res = await fetch(`${API_BASE}/api/tickets/${id}`);
       if (res.ok) {
         const data = await res.json();
         setSelectedTicket(data);
