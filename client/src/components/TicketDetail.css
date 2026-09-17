@@ -1,0 +1,177 @@
+.ticket-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  gap: 1rem;
+}
+
+.btn-back {
+  background: none;
+  border: 1px solid var(--color-border);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #f1f5f9;
+}
+
+.detail-header h2 {
+  font-size: 1.1rem;
+  font-family: monospace;
+}
+
+.detail-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.info-section {
+  margin-bottom: 2rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.mt-3 {
+  margin-top: 1.25rem;
+}
+
+.info-group label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-group div {
+  font-size: 0.95rem;
+}
+
+.category-tag {
+  display: inline-block;
+  background: #f1f5f9;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem !important;
+}
+
+.detail-status-badge {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.issue-summary-box {
+  background-color: #f8fafc;
+  border: 1px solid var(--color-border);
+  padding: 0.75rem;
+  border-radius: 6px;
+  line-height: 1.4;
+}
+
+/* Audit Timeline */
+.audit-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-left: 2px solid var(--color-border);
+}
+
+.timeline-item:last-child {
+  border-left-color: transparent;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-surface);
+}
+
+.timeline-content {
+  position: relative;
+  top: -4px;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.timeline-time {
+  color: var(--color-text-muted);
+  font-family: monospace;
+}
+
+.timeline-actor {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.timeline-action {
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #f1f5f9;
+}
+
+.timeline-action.action-resolved { background-color: #dcfce7; color: #166534; }
+.timeline-action.action-escalate { background-color: #fee2e2; color: #991b1b; }
+
+.timeline-detail {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.4;
+  background-color: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
