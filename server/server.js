@@ -85,6 +85,19 @@ app.post('/api/chat', async (req, res) => {
     res.status(500).json({ error: 'Failed to process your request. Please try again.' });
   }
 });
+// List all tickets
+app.get('/api/tickets', (req, res) => {
+  res.json(store.getTickets());
+});
+
+// Get a single ticket by ID (includes full audit trail)
+app.get('/api/tickets/:id', (req, res) => {
+  const ticket = store.getTicketById(req.params.id);
+  if (!ticket) {
+    return res.status(404).json({ error: `Ticket ${req.params.id} not found.` });
+  }
+  res.json(ticket);
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
