@@ -4,8 +4,8 @@ An AI-powered IT Support Helpdesk built for the AIONOS-A2 Assignment. This appli
 
 ## 1. Live Working Prototype
 
-👉 **Live Demo:** `[INSERT_YOUR_VERCEL_LINK_HERE]`
-👉 **Backend API:** `[INSERT_YOUR_RENDER_LINK_HERE]`
+👉 **Live Demo:** `aionos-assignment-one.vercel.app`
+👉 **Backend API:** `https://aionos-assignment.onrender.com`
 
 *(Note: To test the app quickly, simply click "Start Session" on the landing page to use the pre-filled demo credentials.)*
 
