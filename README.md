@@ -59,7 +59,7 @@ flowchart LR
 
 ### Technical Assumptions
 * **Context over RAG:** Given the relatively small size of the fictional Veridian Corp KB, a deliberate architectural choice was made to inject the *entire* KB into the system prompt context window rather than over-engineering a Vector Database (RAG) pipeline. This guarantees perfect recall and eliminates retrieval hallucination.
-* **In-Memory Data Store:** Due to the ~4-hour time-box constraint of the assignment, persistent databases (PostgreSQL/MongoDB) were scoped out. Ticket state and audit trails are managed via an in-memory array (`store.js`) which resets upon server restart.
+* **In-Memory Data Store:** Due to the ~6-hour time-box constraint of the assignment, persistent databases (PostgreSQL/MongoDB) were scoped out. Ticket state and audit trails are managed via an in-memory array (`store.js`) which resets upon server restart.
 * **Deterministic Guardrails over AI Autonomy:** We assume that LLMs cannot be 100% trusted with security-critical IT policies. Therefore, hardcoded fallback overrides (`escalationRules.js`) take precedence over the AI's intended actions.
 
 ## 4. List of AI Tools Used and How They Were Used
@@ -70,8 +70,6 @@ flowchart LR
    * *How it was used:* Acted as a pair-programmer to accelerate development. It was used to generate detailed Markdown specifications before coding, scaffold the Vite/React frontend, and implement the Express backend API logic.
 3. **Context7 MCP Server (Model Context Protocol):**
    * *How it was used:* Connected directly to the Antigravity coding agent to feed it real-time, up-to-date documentation for React and Vite. This ensured the generated frontend code utilized modern patterns without hallucinations.
-4. **shadcn/ui & 21st.dev MCP Servers:**
-   * *How it was used:* Evaluated during the frontend planning phase to inject high-quality UI components directly into the agent's context. (Note: Ultimately discarded in favor of writing plain CSS to adhere strictly to the project's constraints).
 
 ---
 
