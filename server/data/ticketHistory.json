@@ -1,0 +1,192 @@
+[
+  {
+    "id": "TK-1042",
+    "employee": "R. Verma",
+    "email": "r.verma@veridian-corp.example",
+    "issueSummary": "VPN credential expired",
+    "category": "access",
+    "status": "resolved",
+    "kbSource": "KB-02",
+    "escalatedTo": null,
+    "createdAt": "2026-09-10T09:00:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-10T09:05:00Z",
+        "actor": "agent",
+        "action": "resolved",
+        "detail": "Provided instructions to renew VPN credentials per KB-02."
+      }
+    ]
+  },
+  {
+    "id": "TK-1043",
+    "employee": "S. Iyer",
+    "email": "s.iyer@veridian-corp.example",
+    "issueSummary": "Laptop replacement (3.2 yrs old)",
+    "category": "hardware",
+    "status": "in_progress",
+    "kbSource": "KB-03",
+    "escalatedTo": null,
+    "createdAt": "2026-09-12T10:30:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-12T10:35:00Z",
+        "actor": "agent",
+        "action": "asked_followup",
+        "detail": "Approved — pending fulfillment. Laptop is over 3 years old per KB-03."
+      }
+    ]
+  },
+  {
+    "id": "TK-1044",
+    "employee": "A. Khan",
+    "email": "a.khan@veridian-corp.example",
+    "issueSummary": "Non-catalog software request",
+    "category": "software",
+    "status": "escalated",
+    "kbSource": "KB-04",
+    "escalatedTo": "IT Security",
+    "createdAt": "2026-09-14T11:15:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-14T11:20:00Z",
+        "actor": "agent",
+        "action": "escalated",
+        "detail": "Pending Security review (active) per KB-04."
+      }
+    ]
+  },
+  {
+    "id": "TK-1045",
+    "employee": "P. Joshi",
+    "email": "p.joshi@veridian-corp.example",
+    "issueSummary": "Mailbox quota increase",
+    "category": "account",
+    "status": "resolved",
+    "kbSource": "KB-06",
+    "escalatedTo": null,
+    "createdAt": "2026-09-15T14:00:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-15T14:10:00Z",
+        "actor": "agent",
+        "action": "resolved",
+        "detail": "Approved at 35GB (closed)."
+      }
+    ]
+  },
+  {
+    "id": "TK-1046",
+    "employee": "M. Das",
+    "email": "m.das@veridian-corp.example",
+    "issueSummary": "Printer paper jam, floor 2",
+    "category": "hardware",
+    "status": "resolved",
+    "kbSource": "KB-05",
+    "escalatedTo": null,
+    "createdAt": "2026-09-16T08:45:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-16T09:00:00Z",
+        "actor": "agent",
+        "action": "resolved",
+        "detail": "Resolved (closed) after technician cleared the jam."
+      }
+    ]
+  },
+  {
+    "id": "TK-1047",
+    "employee": "K. Singh",
+    "email": "k.singh@veridian-corp.example",
+    "issueSummary": "Home office equipment request",
+    "category": "hardware",
+    "status": "escalated",
+    "kbSource": "KB-10",
+    "escalatedTo": "Finance",
+    "createdAt": "2026-09-17T09:30:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-17T09:35:00Z",
+        "actor": "agent",
+        "action": "escalated",
+        "detail": "Pending Finance (active) sign-off per KB-10."
+      }
+    ]
+  },
+  {
+    "id": "TK-1048",
+    "employee": "T. Rao",
+    "email": "t.rao@veridian-corp.example",
+    "issueSummary": "Phishing email reported",
+    "category": "security",
+    "status": "escalated",
+    "kbSource": "KB-09",
+    "escalatedTo": "IT Security",
+    "createdAt": "2026-09-17T10:00:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-17T10:05:00Z",
+        "actor": "agent",
+        "action": "escalated",
+        "detail": "Escalated to Security — under investigation (active)."
+      }
+    ]
+  },
+  {
+    "id": "TK-1049",
+    "employee": "V. Nambiar",
+    "email": "v.nambiar@veridian-corp.example",
+    "issueSummary": "Password reset",
+    "category": "account",
+    "status": "resolved",
+    "kbSource": "KB-01",
+    "escalatedTo": null,
+    "createdAt": "2026-09-17T11:00:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-17T11:05:00Z",
+        "actor": "agent",
+        "action": "resolved",
+        "detail": "Resolved (closed) account unlocked."
+      }
+    ]
+  },
+  {
+    "id": "TK-1050",
+    "employee": "J. Fernandes",
+    "email": "j.fernandes@veridian-corp.example",
+    "issueSummary": "Admin access request",
+    "category": "access",
+    "status": "resolved",
+    "kbSource": null,
+    "escalatedTo": null,
+    "createdAt": "2026-09-17T13:00:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-17T13:15:00Z",
+        "actor": "agent",
+        "action": "resolved",
+        "detail": "Rejected — no business justification provided (closed)."
+      }
+    ]
+  },
+  {
+    "id": "TK-1051",
+    "employee": "L. Menon",
+    "email": "l.menon@veridian-corp.example",
+    "issueSummary": "Guest Wi-Fi issued",
+    "category": "network",
+    "status": "resolved",
+    "kbSource": "KB-07",
+    "escalatedTo": null,
+    "createdAt": "2026-09-17T14:30:00Z",
+    "auditTrail": [
+      {
+        "ts": "2026-09-17T14:35:00Z",
+        "actor": "agent",
+        "action": "resolved",
+        "detail": "Resolved (closed). Generated guest credentials per KB-07."
+      }
+    ]
+  }
+]
