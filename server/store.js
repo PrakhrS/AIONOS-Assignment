@@ -37,6 +37,22 @@ function updateTicket(id, updates) {
   return null;
 }
 
+function getNextTicketId() {
+  const maxNum = tickets.reduce((max, t) => {
+    const num = parseInt(t.id.replace('TK-', ''), 10);
+    return num > max ? num : max;
+  }, 0);
+  return `TK-${String(maxNum + 1).padStart(4, '0')}`;
+}
+
+function appendAuditEntry(ticketId, entry) {
+  const ticket = tickets.find(t => t.id === ticketId);
+  if (!ticket) return null;
+  if (!ticket.auditTrail) ticket.auditTrail = [];
+  ticket.auditTrail.push(entry);
+  return ticket;
+}
+
 // Initial load
 loadData();
 
@@ -44,5 +60,7 @@ module.exports = {
   getTickets,
   getTicketById,
   addTicket,
-  updateTicket
+  updateTicket,
+  getNextTicketId,
+  appendAuditEntry
 };

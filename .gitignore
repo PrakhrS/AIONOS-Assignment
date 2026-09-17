@@ -1,3 +1,4 @@
 mcp_config.jsonnode_modules/
 node_modules/
 .agents/mcp_config.json
+.env
